@@ -34,7 +34,7 @@ if len(output) > 0:  # In case there are no subtitles found
     # --Mail settings--
     subject = os.getcwd()  # The name of the current folder as subject
     # email set in an outter file for
-    to = open("email.txt").readline()
+    to = open("/Users/Rumil/Documents/git-repos/Scripts/email.txt").readline()
 
     # Send mail
     call(attachmentString + " | mailx -s '" + subject + "' " + to, shell=True)
